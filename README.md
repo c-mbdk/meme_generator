@@ -8,7 +8,9 @@ Underneath each meme, the URL of the Reddit post and the image are displayed - b
 ## How to Run
 
 1. Install virtualenv:
-    $ pip install virtualenv
+```
+$ pip install virtualenv
+```
 
 2. Open a terminal in the project root directory and run:
     $ virtualenv env
