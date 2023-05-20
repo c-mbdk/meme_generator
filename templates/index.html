@@ -1,17 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Meme Generator</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
-  </head>
-  <body>
-    <h1>Meme Generator</h1>
-    <div></div>
-	<div>
-        <button>New meme</button>
-    </div>
-  </body>
-</html>
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title> Tech Meme Gallery</title>
+
+{% endblock %}
+
+{% block body %}
+
+<h1>Tech Meme Gallery</h1>
+<div>
+    <img src="{{ meme_pic }}">
+    <p>Current subreddit: {{subreddit}}</p>
+    <p>Image URL: <a href="{{download_url}}" target="_blank">{{download_url}}</a></p>
+    <p>Post URL: <a href="{{post_link}}" target="_blank">{{post_link}}</a></p>
+    <a href="{{ url_for('index') }}"><button class="action-items">Show me another meme</button></a>
+    <form method="post" action="/">
+        <input class="action-items" type="submit" value="Download" name="action1"/>
+    </form>
+</div> 
+
+{% endblock %}

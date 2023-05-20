@@ -4,3 +4,7 @@ body {
     text-align: center;
     background-color: peachpuff;
 }
+
+.action-items {
+    font-size: large;
+}
