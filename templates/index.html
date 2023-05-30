@@ -9,15 +9,25 @@
 {% block body %}
 
 <h1>Tech Meme Gallery</h1>
-<div>
-    <img src="{{ meme_pic }}">
-    <p>Current subreddit: {{subreddit}}</p>
-    <p>Image URL: <a href="{{download_url}}" target="_blank">{{download_url}}</a></p>
-    <p>Post URL: <a href="{{post_link}}" target="_blank">{{post_link}}</a></p>
-    <a href="{{ url_for('index') }}"><button class="action-items">Show me another meme</button></a>
-    <form method="post" action="/">
-        <input class="action-items" type="submit" value="Download" name="action1"/>
-    </form>
+<div class="img-info">
+    <div>
+        <div class="gallery-item">
+            <img src="{{ meme_pic }}">
+        </div>
+    </div>
+    <div class="img-text">
+        <div class="squash-right"></div>
+        <p>Current subreddit: {{subreddit}}</p>
+        <p>Image URL: <a href="{{download_url}}" target="_blank">{{download_url}}</a></p>
+        <p>Post URL: <a href="{{post_link}}" target="_blank">{{post_link}}</a></p>
+        <div class="squash-left"></div>
+    </div>
+    <div class="buttons">
+        <a href="{{ url_for('index') }}"><button class="bn3637 bn37" id="another-meme">Show me another meme</button></a>
+        <form method="post" action="/">
+            <input class="bn3637 bn37" type="submit" value="Download" id="download" name="action1"/>
+        </form>
+    </div>
 </div> 
 
 {% endblock %}

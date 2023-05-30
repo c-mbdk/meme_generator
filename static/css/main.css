@@ -1,10 +1,78 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 30;
-    text-align: center;
-    background-color: peachpuff;
+html {
+    scroll-behavior: smooth;
 }
 
-.action-items {
-    font-size: large;
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 30;
+    text-align: center;
+    background-color: #2A2827;
+}
+
+h1 { color: #c9d0d4; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 46px; 
+    font-weight: 200; 
+    line-height: 50px; 
+    letter-spacing: 1px; 
+    padding: 0 0 40px; 
+    border-bottom: double #555; 
+    text-transform: uppercase;
+}
+
+.gallery-item img {
+    border-radius: 15px;
+    box-shadow: 0 0 16px #333;
+    max-height: 800px;
+    max-width: 800px;
+}
+
+.img-info {
+    border-bottom: double #555;
+    margin-bottom: 40px;
+}
+
+.img-info p, a {
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bn3637 {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 60px;
+    width: 210px;
+    opacity: 1;
+    background-color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    margin: 20px;
+  }
+
+.img-text {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+    line-height: 12px;
+    letter-spacing: 2px; 
+    text-align: center;
+    text-shadow: grey;
+    display: block;
+    margin-top: 20px;
+    border-bottom: double #555;
+    padding-bottom: 10px;
+}
+
+.squash-left {
+    margin-right: 30px;
+
 }
